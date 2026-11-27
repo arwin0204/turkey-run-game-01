@@ -1,0 +1,44 @@
+/* Gobble Dash — page shell. The game itself is drawn on the canvas. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #2b1608;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f6e3c2;
+}
+
+#stage {
+  width: min(100vw, 1280px);
+  padding: 12px;
+  text-align: center;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 72px);
+  margin: 0 auto;
+  border: 4px solid #7a4a1f;
+  border-radius: 10px;
+  background: #f7b267;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+#hint {
+  margin: 10px 0 0;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #d9b380;
+}
